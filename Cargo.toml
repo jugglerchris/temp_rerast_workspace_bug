@@ -1,0 +1,16 @@
+[package]
+name = "rerast_ws"
+version = "0.1.0"
+authors = ["Chris Emerson <github@mail.nosreme.org>"]
+edition = "2018"
+
+[dependencies]
+rerast_test = { path = "crates/rerast_test" }
+
+[features]
+
+# Keep debug info by default on release builds
+[profile.release]
+debug = true
+
+[workspace]
